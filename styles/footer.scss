@@ -1,0 +1,24 @@
+/* footer flexbox */
+footer {
+    position: relative;
+    top: 10vh;
+    background-color: rgb(0, 13, 81);; 
+    display: flex; 
+    height: 14rem;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    padding: 3rem;
+    gap: 10vw;
+    color: white;
+}
+
+/* set footer link font color to white */
+footer a {
+    color: white;
+}
+
+/* make ul format pritter */
+.footer-links ul {
+    padding-inline-start: 0;
+    
+}

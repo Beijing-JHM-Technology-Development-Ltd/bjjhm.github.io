@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.63.6"
+  },
+  "name": "jhm_static",
+  "version": "1.0.0",
+  "description": "Dev for JHM static website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass styles/main.scss styles/dist/main.css"
+  },
+  "author": "lzy",
+  "license": "ISC"
+}

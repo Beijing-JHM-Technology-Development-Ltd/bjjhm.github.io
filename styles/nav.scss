@@ -1,0 +1,37 @@
+/* navigation item */
+nav {
+    top: 0;
+    left: 0;
+    display: flex; 
+    width: 100vw;
+    height: 10vh;
+    padding: 0%;
+    margin: auto;
+    position: sticky;
+    z-index: 5;
+    flex-direction: row; 
+    align-items:center; 
+    justify-items: center;
+    justify-content: center;
+    gap: 25vw;
+    background-color: rgb(126, 0, 0);
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+nav .nav-logo {
+    display: inline;
+}
+
+/* ul and li in nav display stye inline */
+nav ul, nav li {
+    display: inline;
+ }
+ 
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 1rem;
+}
