@@ -12,8 +12,7 @@ nav {
     flex-direction: row; 
     align-items:center; 
     justify-items: center;
-    justify-content: center;
-    gap: 25vw;
+    justify-content: space-evenly;
     background-color: rgb(126, 0, 0);
     border-radius: 0 0 0.3rem 0.3rem;
 }
@@ -34,4 +33,13 @@ nav ul {
 nav li {
     display: inline;
     margin: 1rem;
+}
+
+nav a {
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: rgb(68, 25, 25);
+    transition: 0.2s;
 }

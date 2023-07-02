@@ -1,4 +1,9 @@
-.slide ul, li, .img-slide {
-    display: inline;
+.slide ul {
+    display: flexbox;
+    padding-inline-start: 0%;
 }
 
+
+.slide {
+    overflow: scroll;
+}
