@@ -1,0 +1,166 @@
+/* navigation item */
+nav {
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  padding: 0%;
+  margin: auto;
+  position: sticky;
+  z-index: 5;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(126, 0, 0);
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+
+nav .nav-logo {
+  display: inline;
+  float: left;
+}
+
+/* ul and li in nav display stye inline */
+nav ul, nav li {
+  display: inline;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 1rem;
+}
+
+nav a {
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: rgb(68, 25, 25);
+  transition: 0.2s;
+}
+
+.slide ul {
+  padding-inline-start: 0%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slide > ul > li {
+  float: left;
+  margin-right: 5vw;
+}
+
+.slide {
+  overflow: hidden;
+  width: 80vw;
+  margin: auto;
+  border: 2px dashed rgb(255, 121, 121);
+  display: flex;
+  flex-direction: row;
+}
+
+.slide img {
+  display: inline;
+}
+
+/* footer flexbox */
+footer {
+  display: flex;
+  height: 14rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10vw;
+  padding: 3rem;
+  color: white;
+}
+
+/* set footer link font color to white */
+footer a {
+  color: white;
+}
+
+/* make ul format pritter */
+footer ul {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.footer-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 0;
+  justify-content: space-between;
+  width: 40vw;
+}
+
+.company-wrapper {
+  width: 25vw;
+}
+
+.exhibition ul {
+  padding-inline-start: 0%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: 1000ms;
+}
+
+.exhibition > ul > li {
+  float: left;
+}
+
+.exhibition {
+  overflow: hidden;
+  width: 80vw;
+  margin: auto;
+  border: 2px dashed rgb(255, 121, 121);
+  display: flex;
+  flex-direction: row;
+}
+
+.exhibition img {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  height: auto;
+  width: auto;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+main {
+  margin: auto;
+  text-align: center;
+}
+
+.copyright {
+  color: white;
+  background-color: rgb(0, 7, 46);
+  position: relative;
+  top: 10vh;
+  padding: 0.1rem 4.5rem 0.1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

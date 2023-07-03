@@ -28,8 +28,6 @@ let move = ()=> {
     },16);
 }
 move();
-// console.log(`${box}`)
-// box.onmouseenter((e)=>clearInterval(playId));
 
 box.addEventListener('mouseenter', (e) => clearInterval(playId));
 box.addEventListener('mouseleave', (e) => move());

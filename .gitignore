@@ -4,4 +4,4 @@ npm-debug.log*
 .npm
 *.tgz
 node_modules
-dist
+/dist
