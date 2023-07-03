@@ -28,15 +28,15 @@
         
         <div style="position: relative; top: 1vh;">
             <section>
-                <h3>幻灯片</h3>
+                <h3 style="font-size: 3rem;">施工案例</h3>
 
                 <div class="slide">
-                    <ul>
-                        <li><img class="img-slide" src="./src/中央空调冷却风组.jpeg" width="800" alt="img1"></li>
-                        <li><img class="img-slide" src="./src/总配电箱.jpeg" width="800" alt="img2"></li>
-                        <li><img class="img-slide" src="./src/logo.png" width="800" alt="img3"></li>
+                    <ul id="imgs">
+                        <li><img class="img-slide" src="./src/中央空调冷却风组.jpeg" height="300px" alt="img1"></li>
+                        <li><img class="img-slide" src="./src/总配电箱.jpeg" height="300px" alt="img2"></li>
+                        <li><img class="img-slide" src="./src/logo.png" height="300px" alt="img3"></li>
                     </ul>
-                    
+                    <ul id="imgs2"></ul>
 
                 </div>
             </section>
@@ -104,16 +104,6 @@
 </div>
 </body>
 
-<script type="text/javascript">
-    let index = 0;
-    let rotateImg = () => {
-        let imgs = document.getElementsByClassName("img-slide")
-        index++;
-        if (index>imgs.length) {
-            index = 0;
-        }
+<script type="text/javascript" src="./scripts/slide.js"></script>
 
-    }
-
-</script>
 </html>

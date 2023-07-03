@@ -27,16 +27,18 @@
         </nav>
         
         <div style="position: relative; top: 1vh;">
-            <section class="slide">
-                <div>
-                    <h3>幻灯片</h3>
-                    <ul>
-                        <li><img class="img-slide" src="./src/logo.png" alt="img1"></li>
-                        <li><img class="img-slide" src="./src/logo.png" alt="img2"></li>
-                        <li><img class="img-slide" src="./src/logo.png" alt="img3"></li>
+            <section>
+                <h3>幻灯片</h3>
+                <div class="slide" id="slide">
+                    <ul id="imgs">
+                        1
+                        <li><img class="img-slide" src="./src/logo.png" alt="img1">1</li>
+                        <li><img class="img-slide" src="./src/logo.png" alt="img2">2</li>
+                        <li><img class="img-slide" src="./src/logo.png" alt="img3">3</li>
+                        1
                     </ul>
-                    
-
+                    <ul id="imgs2">
+                    </ul>
                 </div>
             </section>
 
@@ -67,9 +69,9 @@
                 <div class="footer-useful-links">
                     友情链接
                     <ul>
-                        <li><a href="">中建二局一公司</a></li>
-                        <li><a href="">北京少年宫</a></li>
-                        <li><a href="">长安商场</a></li>
+                        <li><a href="https://2bur.cscec.com/">中建二局一公司</a></li>
+                        <li><a href="http://bjssng.cn/">北京市少年宫</a></li>
+                        <li><a href="https://www.wfj.com.cn/score?id=4">长安商场</a></li>
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
                     </ul>
@@ -104,17 +106,6 @@
     </section>
 </div>
 </body>
+<script type="text/javascript" src="./scripts/exhibition.js"></script>
 
-<script type="text/javascript">
-    let index = 0;
-    let rotateImg = () => {
-        let imgs = document.getElementsByClassName("img-slide")
-        index++;
-        if (index>imgs.length) {
-            index = 0;
-        }
-
-    }
-
-</script>
 </html>
