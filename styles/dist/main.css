@@ -116,7 +116,7 @@ footer ul {
   flex-direction: row;
   list-style-type: none;
   width: fit-content;
-  margin: 0;
+  margin: auto;
   padding: 0;
   position: relative;
   transition: 1000ms;

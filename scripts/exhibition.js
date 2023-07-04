@@ -26,7 +26,7 @@ let move = ()=> {
         // if (left2 *-1 > 2*imgs.clientWidth){
         //     left2 = 0;
         // }
-    },2500);
+    },3500);
 }
 move();
 
