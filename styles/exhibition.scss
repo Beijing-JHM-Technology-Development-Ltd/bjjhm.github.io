@@ -3,29 +3,36 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    width: fit-content;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     position: relative;
     transition: 1000ms;
-    
 }
 
 .exhibition > ul > li {
     float: left;
     // margin-right: 10vw;
+    padding: 0;
+    width: 100vw;
+
 }
 
 .exhibition {
     overflow: hidden;
-    width: 80vw; 
+    width: 100vw; 
+    height: min-content;
     margin: auto; 
-    border: 2px dashed rgb(255, 121, 121);
+    // border: 2px dashed rgb(255, 121, 121);
     display: flex;
     flex-direction: row;
+    // justify-content: space-around;
 }
 
 .exhibition img {
-    display: inline;
+    // display: block;
+    padding: 0;
+    margin: auto;
+    object-fit: cover;
+    width: 100vw;
 }
 

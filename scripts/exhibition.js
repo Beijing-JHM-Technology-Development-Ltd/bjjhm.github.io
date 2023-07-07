@@ -17,18 +17,12 @@ let move = ()=> {
 
         imgs.style.left = left+'px';
 
-        if (left *-1 > imgs.clientWidth){
+        if (left *-1 > 2*imgs.clientWidth/3-1){
             left = imgs.clientWidth/3+1;
         }
-
-        // left2 -= imgs.clientWidth/3+1;
-        // imgs2.style.left = left2+'px';
-        // if (left2 *-1 > 2*imgs.clientWidth){
-        //     left2 = 0;
-        // }
     },3500);
 }
 move();
 
-box.addEventListener('mouseenter', (e) => clearInterval(playId));
-box.addEventListener('mouseleave', (e) => move());
+// box.addEventListener('mouseenter', (e) => clearInterval(playId));
+// box.addEventListener('mouseleave', (e) => move());
