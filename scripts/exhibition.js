@@ -1,26 +1,22 @@
 console.log(`Script loaded.`)
 
 const box = document.getElementById('exhibition');
-const imgs = document.getElementById('imgs');
-
-
-let left = imgs.clientWidth/3+1;
-// let left2 = 0;
-// const img2 = document.getElementById('imgs2');
-// imgs2.innerHTML = imgs.innerHTML;
+const imgs = document.getElementsByClassName('img-exhibition');
 
 
 let playId;
 let move = ()=> { 
+    let i = 0;
     playId = setInterval(() => {
-        left -= imgs.clientWidth/3+1;
-
-        imgs.style.left = left+'px';
-
-        if (left *-1 > 2*imgs.clientWidth/3-1){
-            left = imgs.clientWidth/3+1;
+        imgs[i].classList.remove('active');
+        i++;
+        if (i == imgs.length){
+            console.log('reset i.')
+            i = 0;
         }
-    },3500);
+        imgs[i].classList.add('active');
+
+    },4000);
 }
 move();
 

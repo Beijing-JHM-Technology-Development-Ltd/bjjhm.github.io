@@ -117,19 +117,24 @@ footer ul {
   margin: 0 auto;
   padding: 0;
   position: relative;
-  transition: 1000ms;
+  width: 100vw;
+  height: 90vh;
 }
 
 .exhibition > ul > li {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 0;
-  width: 100vw;
+}
+
+.exhibition > ul > li > .active {
+  opacity: 1;
 }
 
 .exhibition {
   overflow: hidden;
   width: 100vw;
-  height: min-content;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -138,8 +143,9 @@ footer ul {
 .exhibition img {
   padding: 0;
   margin: auto;
-  object-fit: cover;
   width: 100vw;
+  opacity: 0;
+  transition: 1000ms;
 }
 
 a {

@@ -6,21 +6,24 @@
     margin: 0 auto;
     padding: 0;
     position: relative;
-    transition: 1000ms;
+    width: 100vw;
+    height: 90vh;
 }
 
 .exhibition > ul > li {
-    float: left;
-    // margin-right: 10vw;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 0;
-    width: 100vw;
+}
 
+.exhibition > ul > li > .active{
+    opacity: 1;
 }
 
 .exhibition {
     overflow: hidden;
     width: 100vw; 
-    height: min-content;
     margin: auto; 
     // border: 2px dashed rgb(255, 121, 121);
     display: flex;
@@ -32,7 +35,9 @@
     // display: block;
     padding: 0;
     margin: auto;
-    object-fit: cover;
+    // object-fit: cover;
     width: 100vw;
+    opacity: 0;
+    transition: 1000ms;
 }
 
