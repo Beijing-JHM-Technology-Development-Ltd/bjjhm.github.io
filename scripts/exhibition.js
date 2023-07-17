@@ -11,7 +11,6 @@ let move = ()=> {
         imgs[i].classList.remove('active');
         i++;
         if (i == imgs.length){
-            console.log('reset i.')
             i = 0;
         }
         imgs[i].classList.add('active');
@@ -20,5 +19,5 @@ let move = ()=> {
 }
 move();
 
-// box.addEventListener('mouseenter', (e) => clearInterval(playId));
-// box.addEventListener('mouseleave', (e) => move());
+box.addEventListener('mouseenter', (e) => clearInterval(playId));
+box.addEventListener('mouseleave', (e) => move());

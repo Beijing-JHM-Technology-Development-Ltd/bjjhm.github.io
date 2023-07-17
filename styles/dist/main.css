@@ -4,7 +4,7 @@ nav {
   left: 0;
   display: flex;
   width: 100vw;
-  height: 10vh;
+  height: 4.5em;
   padding: 0%;
   margin: auto;
   position: sticky;
@@ -89,6 +89,15 @@ footer a {
   color: white;
 }
 
+footer table {
+  margin: 1em 0;
+}
+
+footer hr {
+  width: 4em;
+  margin: 0.5em 0 0 0;
+}
+
 /* make ul format pritter */
 footer ul {
   padding-inline-start: 0;
@@ -148,27 +157,6 @@ footer ul {
   transition: 1000ms;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  height: auto;
-  width: auto;
-}
-
-h3 {
-  font-size: 3rem;
-}
-
-main {
-  margin: auto;
-  text-align: center;
-}
-
-.introduction {
-  text-align: left;
-  margin: 0 10vw;
-}
-
 .deck {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -192,7 +180,17 @@ main {
   transform: scale(1.05);
 }
 
+.card p {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1em;
+  margin: 0;
+}
+
 .card-img-wrapper {
+  position: relative;
+  z-index: 0;
   height: 80%;
   width: 100%;
   overflow: hidden;
@@ -202,13 +200,38 @@ main {
 .card-img-wrapper > img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   transition: 500ms;
 }
 
 .card-img-wrapper:hover > img {
   transform: scale(1.3);
   transition: 500ms;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  height: auto;
+  width: auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+main {
+  margin: auto;
+  text-align: center;
+}
+
+.introduction {
+  text-align: left;
+  margin: 0 10vw;
 }
 
 .copyright {
