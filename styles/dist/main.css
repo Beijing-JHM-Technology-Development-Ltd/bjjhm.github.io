@@ -305,7 +305,7 @@ main {
   overflow: hidden;
 }
 .about-img img {
-  width: 100vw;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
