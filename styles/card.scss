@@ -12,7 +12,7 @@
     border-radius: 1rem;
     overflow: hidden;
     transition: 500ms;
-
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .card > p{
@@ -26,8 +26,8 @@
 .card p {
     position: relative;
     z-index: 1;
-    background-color: rgba($color: #ffffff, $alpha: 0.5);
-    padding: 1em;
+    // background-color: rgba($color: #ffffff, $alpha: 0.5);
+    // padding: 1em;
     margin: 0;
 }
 
