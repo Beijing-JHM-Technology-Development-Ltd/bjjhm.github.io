@@ -1,3 +1,14 @@
+.exhibition {
+    overflow: hidden;
+    width: 100vw; 
+    height: 42.85vw;
+    margin: auto; 
+    // border: 2px dashed rgb(255, 121, 121);
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-around;
+}
+
 .exhibition ul {
     padding-inline-start: 0%;
     display: flex;
@@ -5,9 +16,8 @@
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
+    width: 100%;
     position: relative;
-    width: 100vw;
-    height: 90vh;
 }
 
 .exhibition > ul > li {
@@ -21,22 +31,12 @@
     opacity: 1;
 }
 
-.exhibition {
-    overflow: hidden;
-    width: 100vw; 
-    margin: auto; 
-    // border: 2px dashed rgb(255, 121, 121);
-    display: flex;
-    flex-direction: row;
-    // justify-content: space-around;
-}
-
 .exhibition img {
     // display: block;
     padding: 0;
     margin: auto;
     // object-fit: cover;
-    width: 100vw;
+    width: 100%;
     opacity: 0;
     transition: 1000ms;
 }

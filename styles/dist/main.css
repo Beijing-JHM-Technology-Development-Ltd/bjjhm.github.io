@@ -78,11 +78,30 @@ nav a:hover {
 footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 14rem;
-  justify-content: space-between;
-  margin: 0 10vw;
-  padding: 3rem;
+  height: max-content;
+  margin: auto;
+  padding: 3rem 0;
   color: white;
+}
+
+.footer-logo {
+  width: 80px;
+}
+
+.company-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.company-wrapper h2 {
+  margin: 0;
+}
+
+.company-wrapper h2 {
+  display: inline;
+  color: rgb(255, 228, 228);
 }
 
 /* set footer link font color to white */
@@ -95,6 +114,7 @@ footer table {
 }
 
 footer hr {
+  visibility: hidden;
   width: 4em;
   margin: 0.5em 0 0 0;
 }
@@ -112,8 +132,50 @@ footer ul {
   display: flex;
   flex-direction: row;
   padding-inline-start: 0;
-  justify-content: space-between;
-  width: 40vw;
+  width: 100%;
+}
+
+.footer-about-us, .footer-contact, .footer-useful-links {
+  flex-grow: 0;
+  width: 33%;
+}
+.footer-about-us table, .footer-contact table, .footer-useful-links table {
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-about-us, .footer-contact, .footer-useful-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1079px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    text-align: -webkit-center;
+  }
+  .footer-about-us, .footer-contact, .footer-useful-links {
+    flex-grow: 0;
+  }
+}
+.exhibition {
+  overflow: hidden;
+  width: 100vw;
+  height: 42.85vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .exhibition ul {
@@ -123,9 +185,8 @@ footer ul {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  width: 100%;
   position: relative;
-  width: 100vw;
-  height: 90vh;
 }
 
 .exhibition > ul > li {
@@ -139,18 +200,10 @@ footer ul {
   opacity: 1;
 }
 
-.exhibition {
-  overflow: hidden;
-  width: 100vw;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-}
-
 .exhibition img {
   padding: 0;
   margin: auto;
-  width: 100vw;
+  width: 100%;
   opacity: 0;
   transition: 1000ms;
 }
@@ -249,7 +302,7 @@ main {
 
 .about-img {
   width: 100vw;
-  height: 80vh;
+  height: 42vw;
   overflow: hidden;
 }
 .about-img img {
