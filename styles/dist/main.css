@@ -16,22 +16,50 @@ nav {
   background-color: rgb(126, 0, 0);
   border-radius: 0 0 0.3rem 0.3rem;
 }
+nav .bar_btn {
+  width: 2rem;
+  font-size: 2rem;
+  display: none;
+  margin: 1rem;
+}
+
+.dropdown-menu {
+  position: sticky;
+  z-index: 1;
+  top: 4.5rem;
+  width: 100vw;
+  height: 0;
+  background-color: rgba(126, 0, 0, 0.8);
+  border-radius: 0 0 1rem 1rem;
+  transition: height 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  backdrop-filter: blur(3px);
+}
+
+.menu-items {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-items li {
+  line-height: 2rem;
+}
 
 nav .nav-logo {
   display: inline;
   float: left;
+  margin: 1rem;
 }
 
 /* ul and li in nav display stye inline */
-nav ul, nav li {
+.nav-items ul, .nav-items li {
   display: inline;
 }
 
-nav ul {
+.nav-items ul {
   margin: 0;
 }
 
-nav li {
+.nav-items li {
   display: inline;
   margin: 1rem;
 }
@@ -45,6 +73,25 @@ nav a:hover {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 1079px) {
+  nav {
+    border-radius: 0;
+  }
+  nav .bar_btn {
+    display: block;
+    cursor: pointer;
+  }
+  nav .nav-items {
+    display: none;
+  }
+  .dropdown-menu.open {
+    height: 11rem;
+  }
+  .dropdown-menu.open .menu-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .slide ul {
   padding-inline-start: 0%;
   display: flex;
@@ -209,14 +256,17 @@ footer ul {
 }
 
 .deck {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: auto;
   width: 80vw;
+  flex-wrap: wrap;
 }
 
 .card {
   height: 200px;
+  width: 300px;
   border: 1px solid white;
   border-radius: 1rem;
   overflow: hidden;
@@ -264,6 +314,10 @@ a {
   color: rgb(255, 255, 255);
   height: auto;
   width: auto;
+}
+
+li {
+  list-style-type: none;
 }
 
 h1 {

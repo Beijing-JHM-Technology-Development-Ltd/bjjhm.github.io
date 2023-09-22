@@ -1,13 +1,16 @@
 .deck {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex; 
+    flex-direction: row;
+    // grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     margin: auto;
     width: 80vw;
-    
+    flex-wrap: wrap;
 }
 
 .card {
     height: 200px;
+    width: 300px;
     border: 1px solid white;
     border-radius: 1rem;
     overflow: hidden;

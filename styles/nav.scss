@@ -15,23 +15,54 @@ nav {
     justify-content: space-evenly;
     background-color: rgb(126, 0, 0);
     border-radius: 0 0 0.3rem 0.3rem;
+
+    .bar_btn{
+        width: 2rem;
+        font-size: 2rem;
+        display: none;
+        margin: 1rem;
+    }
+}
+
+.dropdown-menu{
+    position: sticky;
+    // display: none;
+    // opacity: 0;
+    z-index: 1;
+    top: 4.5rem;
+    width: 100vw;
+    height: 0;
+    background-color: rgba(126, 0, 0, 0.8);
+    border-radius: 0 0 1rem 1rem;
+    transition: height 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    backdrop-filter: blur(3px);
+}
+
+.menu-items{
+    display: none;
+    padding: 0;
+    margin: 0;
+    li{
+        line-height: 2rem;
+    }
 }
 
 nav .nav-logo {
     display: inline;
     float: left;
+    margin: 1rem;
 }
 
 /* ul and li in nav display stye inline */
-nav ul, nav li {
+.nav-items ul, .nav-items li {
     display: inline;
  }
  
-nav ul {
+.nav-items ul {
     margin: 0;
 }
 
-nav li {
+.nav-items li {
     display: inline;
     margin: 1rem;
 }
@@ -43,4 +74,28 @@ nav a {
 nav a:hover {
     color: rgb(68, 25, 25);
     transition: 0.2s;
+}
+
+@media screen and (max-width: 1079px) {
+    nav{
+        border-radius: 0;
+
+        .bar_btn{
+            display:block;
+            cursor: pointer;
+        }
+
+        .nav-items{
+            display: none;
+        }
+    }
+    .dropdown-menu.open {
+        // display: block;
+        height: 11rem;
+        .menu-items{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
 }

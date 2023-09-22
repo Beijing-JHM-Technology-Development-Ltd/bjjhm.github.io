@@ -4,11 +4,16 @@
 @import 'exhibition.scss';
 @import 'card.scss';
 
+
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     height: auto;
     width: auto;
+}
+
+li{
+    list-style-type: none;
 }
 
 h1 {
