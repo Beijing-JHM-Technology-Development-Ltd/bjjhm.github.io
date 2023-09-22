@@ -31,13 +31,14 @@ main {
 .introduction {
     text-align: left;
     margin: 0 10vw;
+    padding-bottom: 20vh;
 }
 
 .copyright {
     color: white;
     background-color: rgb(0, 7, 46);
     position: relative;
-    top: 10vh;
+    // top: 10vh;
     padding: 0.1rem 4.5rem 0.1rem;
     p{
         font-size: 1rem;
